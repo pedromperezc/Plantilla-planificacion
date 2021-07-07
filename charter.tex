@@ -7,17 +7,17 @@ codirector, % Uncomment to add a codirector to the title page
 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Desarrollo de programa para análisis de distribución de tamaño de nanopartículas} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
-\posgrado{Carrera de Especialización en Sistemas Embebidos} 
+%\posgrado{Carrera de Especialización en Sistemas Embebidos} 
 %\posgrado{Carrera de Especialización en Internet de las Cosas} 
-%\posgrado{Carrera de Especialización en Intelegencia Artificial}
+\posgrado{Carrera de Especialización en Inteligencia Artificial}
 %\posgrado{Maestría en Sistemas Embebidos} 
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Lic. Pedro Miguel Pérez} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
 \director{Nombre del Director}
@@ -27,8 +27,8 @@ codirector, % Uncomment to add a codirector to the title page
 \pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{Mara Alderete}
+\empresaCliente{Instituto de Nanosistemas UNSAM}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -38,8 +38,8 @@ codirector, % Uncomment to add a codirector to the title page
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
  
-\fechaINICIO{30 de abril de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlan{18 de junio de 2021} 	%Fecha de final de cursada de GdP
+\fechaINICIO{24 de junio de 2021}		%Fecha de inicio de la cursada de GdP 
+\fechaFINALPlan{18 de agosto de 2021} 	%Fecha de final de cursada de GdP
 \fechaFINALTrabajo{15 de mayo de 2022}	%Fecha de defensa pública del trabajo final
 
 
@@ -69,7 +69,7 @@ codirector, % Uncomment to add a codirector to the title page
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
-%1      & Se completa hasta el punto 4 inclusive                 & dd/mm/aaaa \\ \hline
+1      & Se completa hasta el punto 5 inclusive                 & 08 de junio de 2021       \\ \hline
 %2      & Se completa hasta el punto 7 inclusive
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de control de temperatura de un calefón}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Lic. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de una red neuronal para el procesamiento de imágenes de microscopía, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -114,58 +114,72 @@ Se adjunta a esta acta la planificación inicial.
 
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
+%\begin{consigna}{black} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección
+%Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
+%
+%\begin{itemize}
+%	\item ¿Cómo se vincula este proyecto con la misión de la organización?
+%	\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
+%	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
+%	\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
+%	\item ¿Cuáles son las necesidades que debe satisfacer?
+%	\item ¿Por dónde pasa la innovación?
+%\end{itemize}
 
+%La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase, se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+%
+%
+%El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama, preferentemente en la gama de colores pastel.
+%
+%\end{consigna}
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección
+Durante el proceso final de síntesis de nanopartículas es necesario llevar adelante su caracterización, la técnica más común es la microscopía electrónica de barrido (SEM), este tipo de microscopios permiten producir imágenes de alta resolución de la superficie de la muestra analizada. El análisis de las imágenes producidas por microscopios SEM aportan información sobre diferentes propiedades físicas en los nanomateriales: tamaño, forma, superficie, etc.  ``En la Figura \ref{fig:particulas} se presenta una imagen de nanopartículas de dióxido de titanio tomadas por un microscopio electrónico de barrido''.
 
-El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, su motivación y su importancia.
-
-Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
-
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
-
-\begin{itemize}
-	\item ¿Cómo se vincula este proyecto con la misión de la organización?
-	\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
-	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-	\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
-	\item ¿Cuáles son las necesidades que debe satisfacer?
-	\item ¿Por dónde pasa la innovación?
-\end{itemize}
-
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase, se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
-
-%\vspace{25px}
-
-\begin{figure}[htpb]
+\begin{figure}[!hb]
 \centering 
-\includegraphics[width=.5\textwidth]{./Figuras/diagBloques.png}
-\caption{Diagrama en bloques del sistema}
+\includegraphics[width=.4\textwidth]{./Figuras/SEM-image-of-the-titanium-dioxide-film.png}
+\caption{Imagen de nanopartículas de dióxido de titanio}
+\label{fig:particulas}
+\end{figure}
+
+Uno de los parámetros más comunes que permite evaluar la calidad de una síntesis realizada es la distribución de tamaños de las partículas o PSD por sus siglas en inglés. La dificultad de esta medición depende principalmente de la forma y la aglomeración de las mismas, por lo tanto cuando las partículas no son esféricas y se encuentran aglomeradas el proceso es mucho más complejo y se ve alterado considerablemente el resultado de la medición. La determinación de la PSD en imágenes de partículas es una tarea compleja que requiere de mucho tiempo y de la intervención del ojo humano para su procesamiento. Esta práctica no solo es laboriosa sino que es repetitiva y provoca muchas veces fatiga ocular en el operador.
+
+
+Actualmente existe la necesidad de poder automatizar la medición de la distribución del tamaño de las partículas en imágenes SEM. El análisis manual realizado es propenso a errores, y a su vez añade el sesgo del operador que realiza la medición. Por lo que un método de procesamiento automático mejoraría la calidad y trazabilidad de los resultados y disminuiría considerablemente el tiempo de procesamiento.
+
+Las redes neuronales, en especial las redes neuronales convolucionales (Convolution Neural Network en inglés - CNN) , han demostrado su amplio potencial en el procesamiento de imágenes para resolver problemas de clasificación y segmentación de objetos. El objetivo principal de este trabajo es poder aplicar técnicas de aprendizaje automático, en particular redes neuronales convolucionales para procesar imágenes automáticamente y así poder determinar la distribución del tamaño de las partículas en las mismas. En este trabajo nuestro principal desafío será crear un sistema automático para el procesamiento de imágenes en un entorno real contando con un número limitado de imágenes para el entrenamiento.
+
+El método consiste en tres fases: generación del dataset, entrenamiento del modelo y aplicación del modelo. ``En la Figura \ref{fig:diagBloques} se presenta una el esquema de trabajo propuesto''.
+
+En la etapa de generación del dataset a partir de imágenes reales se realizará un proceso de segmentación manual en la cual se extraera el área de interés o ROI.  
+
+Las imágenes etiquetadas serán utilizadas para entrenar el modelo mediante la arquitectura seleccionada. En la aplicación del modelo, permitirá procesar imágenes reales para así determinar la distribución del tamaño de partículas. 
+
+\begin{figure}[!hb]
+\centering 
+\includegraphics[width=.9\textwidth]{./Figuras/diagrama.png}
+\caption{Esquema de trabajo propuesto}
 \label{fig:diagBloques}
 \end{figure}
 
-\vspace{25px}
 
-El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama, preferentemente en la gama de colores pastel.
-\end{consigna}
 
 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
 
-\begin{consigna}{red} 
-Nota: (borrar esto y todas las consignas en color rojo antes de entregar este documento).
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos.
- 
-Si se considera que una persona cumple dos o más roles, entonces sólo dejarla en el rol más importante. Por ejemplo:
-
-\begin{itemize}
-\item Si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente.
-\item Si una persona es el Responsable, no debe ser colocado también como Miembro del equipo.
-\end{itemize}
-
-Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por ejemplo.
+%Nota: (borrar esto y todas las consignas en color rojo antes de entregar este documento).
+% 
+%Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos.
+% 
+%Si se considera que una persona cumple dos o más roles, entonces sólo dejarla en el rol más importante. Por ejemplo:
+%
+%\begin{itemize}
+%\item Si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente.
+%\item Si una persona es el Responsable, no debe ser colocado también como Miembro del equipo.
+%\end{itemize}
+%
+%Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por ejemplo.
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -174,75 +188,94 @@ Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por e
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+Cliente       & \clientename      &\empclientename	& Coordinadora UNSAM\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
+Colaboradores &  Marina Simian    & CONICET         &Investigadora \\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Usuario final &Operador           &UNSAM          	&Analista        	\\ \hline
 \end{tabularx}
 \end{table}
 
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Es deseable listar a continuación las principales características de cada interesado.
- 
-Por ejemplo:
+%El Director suele ser uno de los Orientadores.
+%
+%No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
+%
+%No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
+%
+%Es deseable listar a continuación las principales características de cada interesado.
+% 
+%Por ejemplo:
 \begin{itemize}
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-	\item Orientador: María Gómez va a poder ayudar mucho con la definición de los requerimientos.
+	\item Colaboradores: Marina Simian será de gran ayuda para la creación de los data set necesarios para entrenar y validar el modelo.
+	\item Usuario final: Los analistas del laboratorio serán de gran ayuda para validar el modelo en un entorno productivo.
 \end{itemize}
 
-\end{consigna}
 
 
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
+%\begin{consigna}{red}
+%¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
+%
+%Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
+%\end{consigna}
+El propósito de este proyecto es diseñar e implementar una solución basada en una arquitectura de red neuronal convolucional que permita determinar la distribución del tamaño de partículas aplicando técnicas de detección y segmentación eficiente en imágenes de microscopía.
 
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
-\end{consigna}
+
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+%\begin{consigna}{red}
+%¿Qué se incluye y que no se incluye en este proyecto?
+%
+%Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+%
+%Explicitar todo lo quede comprendido dentro del alcance del proyecto.
+%
+%Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
+%
+%\end{consigna}
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+El desarrollo del proyecto incluye:
+\begin{itemize}
+	\item Desarrollar una herramienta que permita determinar la distribución del tamaño de partículas en una imagen de microscopía electrónica de barrido utilizando redes neuronales convolucionales (CNN).
+	\item Estudiar y comparar diferentes arquitecturas de redes neuronales para evaluar su rendimiento, se plantea explorar las siguientes arquitecturas (U-NET, FastFCN y Mask R-CNN)
+	\item Crear un dataset de imágenes que permita el entrenamiento de la red.
+	\item Transformar y adaptar el dataset utilizado con el fin de incrementar el número de muestras y así poder aumentar la performance del modelo.
+	\item Desarrollar una CNN que permita determinar la distribución del tamaño de partículas en dos clases de imágenes: partículas aisladas y aglomerado de partículas.
+	\item Evaluar la efectividad del modelo y aplicar técnicas que permitan mejorar el rendimiento de la red aplicando técnicas de optimización de los hiper parámetros.
+	\item Escalar el modelo para el procesamiento de imágenes de naturaleza distinta a las nanopartículas, como por ejemplo imágenes de esferoides.
+	\item Desarrollar un servicio web básico, donde se podrá hacer uso de la red neuronal para analizar las imágenes de partículas.
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
+\end{itemize}
 
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
 
-\end{consigna}
 
 
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+%\begin{consigna}{red}
+%``Para el desarrollo del presente proyecto se supone que: ...''
+%
+%\begin{itemize}
+%	\item Supuesto 1
+%	\item Supuesto 2...
+%\end{itemize}
+%
+%Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
+%\end{consigna}
 
+Para el desarrollo del presente proyecto se supone que:
 \begin{itemize}
-	\item Supuesto 1
-	\item Supuesto 2...
+	\item Se dispondrá un conjunto de imágenes previamente etiquetadas para realizar el entrenamiento del modelo.
+	\item El cliente deberá colaborar en la recolección y etiquetado de las imágenes que será utilizadas para el entrenamiento del modelo.
+	\item El entrenamiento del modelo será realizado sobre la plataforma Colab.
+	\
 \end{itemize}
-
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
